@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SignIn Form</title>
+   <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+   
+<div class="form-container">
+   <form  id="form" action="" method="post" onsubmit="return validateForm()">
+      <h3>CREATE ACCOUNT</h3>
+      <input type="text" id="name" name="name"  placeholder="Shkruaj emrin">
+      <div class="error-message" id="nameError"></div>
+
+      <input type="email" id="email" name="email"  placeholder="Shkruaj email">
+      <div class="error-message" id="emailError"></div>
+
+      <input type="password" id="password" name="password"  placeholder="Shkruaj password-in">
+      <div class="error-message" id="passwordError"></div>
+
+      <input type="password" id="cpassword" name="cpassword" placeholder="Konfirmo password-in">
+      <div class="error-message" id="cpasswordError"></div>
+
+
+      <input type="submit" name="submit" value="register" class="form-btn"  >
+      <p>Already have an account? <a href="login.html">Login</a></p>
+   </form>
+
+</div>
+<script>
+        function validateForm(){
+         
+
+            let name=document.getElementById('name').value;
+            let nameError=document.getElementById('nameError');
+
+            let email=document.getElementById('email').value;
+            let emailError=document.getElementById('emailError');
+
+            let password=document.getElementById('password').value;
+            let passwordError=document.getElementById('passwordError');
+
+            let cpassword=document.getElementById('cpassword').value;
+            let cpasswordError=document.getElementById('cpasswordError'); 
+        
+            nameError.innerText='';
+            emailError.innerText='';
+            passwordError.innerText='';
+            cpasswordError.innerText='';
+
+            let regxname= /[a-zA-Z]/ ;
+            if(name.trim()=='' || !regxname.test(name)){
+                nameError.innerText='Emri eshte invalid';
+                return false;
+            }
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(email.trim()==""||!emailRegex.test(email)){
+                emailError.innerText="Email eshte invalid";
+                return false;
+            }
+            if(password.trim()==""){
+                passwordError.innerText='Shkruani passwordin';
+                return false;
+            }
+            if(cpassword!==password){
+                cpasswordError.innerText='Password-i nuk perputhet';
+                return false;
+            }
+            return true;
+        }
+</script>
+</body>
+</html>
