@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+#pozitat{
+    text-align: center;
+    justify-content: center;
+}
+
+.Aplikimi{   
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin-left: 150px;
+    border: 1px solid black;
+    background-color:#ffffffb6;
+    color: black;
+    border-radius: 6px;
+    padding:20px;
+}
+#open-positions{
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+
+input{
+    width: 90%;
+    height: 20px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#address{
+    width: 92%;
+    margin-bottom: 10px;
+
+}
+
+#qytetet{
+    width: 92%;
+    padding: 10px;
+}
+
+#shoferi{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+  
+.error-message{
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 5%;
+    
+}
+
+  .porosia-butoni{
+    display: flex;
+    margin-left: 45%;
+    margin-top:10px;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .porosia-butoni:hover{
+    background-color: rgb(52, 51, 51);
+  }
+
+  @media screen and (max-width: 600px) {
+    .headerContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logoAndCatalog {
+        margin-bottom: 20px;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .bgphoto {
+        height: 150px; /* Adjust height as needed */
+    }
+
+    .Aplikimi {
+        padding: 20px;
+    }
+
+    .Aplikimi h1 {
+        font-size: 1.5em;
+    }
+
+    #open-positions,
+    #emri,
+    #mbiemri,
+    #email,
+    #nenshtetesia,
+    #datalindjes,
+    #qytetet,
+    #address {
+        width: 100%;
+    }
+
+    .error-message {
+        font-size: 14px;
+    }
+
+    .field {
+        text-align: center;
+    }
+
+    .porosia-butoni {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .f {
+        flex-direction: column;
+    }
+
+    .footermain {
+        flex-direction: column;
+    }
+
+    .footerleft,
+    .footercenter,
+    .footerright {
+        text-align: center;
+    }
+}
