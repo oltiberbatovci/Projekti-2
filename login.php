@@ -1,48 +1,33 @@
 <?php
 session_start();
 
-
 include 'DatabaseConnection.php';
 
-
-
 if(isset($_POST['submit'])) {
-
     $dbConnection = new DatabaseConnection();
-    
-    
     $conn = $dbConnection->startConnection();
 
-
-    if($conn) {
-       
+    if($conn) {    
         $email = $_POST['email'];
         $password = md5($_POST['password']);
-
-      
+   
         $sql = "SELECT * FROM user_form WHERE email = :email AND password = :password";
-
-        
+     
         $stmt = $conn->prepare($sql);
         $stmt->execute(['email' => $email, 'password' => $password]);
         $user = $stmt->fetch();
 
         
-        if ($user) {
-        
+        if ($user) {      
             $user_type = $user['user_type'];
-
-            if ($user_type == 'admin') {
-            
-                $_SESSION['admin_name'] = $user['name'];
-             
+            if ($user_type == 'admin') {          
+                $_SESSION['admin_name'] = $user['name'];           
                 header('Location: homeAdmin.php');
                 exit();
             } 
              
                 if($user_type == 'user'){
                   $_SESSION['user_name'] = $user['name'];
-
                  header('Location: homeUser.php');
                  exit();
          }

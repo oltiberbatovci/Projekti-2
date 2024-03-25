@@ -39,29 +39,29 @@ if (isset($_POST['submit'])) {
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-logo" href="index.html">ThirreTaxin</a>
+              <a class="navbar-logo" href="index.php">ThirreTaxin</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" href="index.php">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">ABOUT</a>
+                    <a class="nav-link" href="about.php">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="order.html">POROSIT</a>
+                    <a class="nav-link" href="order.php">POROSIT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-link" href="contact.php">CONTACT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="punesimi.html">PUNESOHU</a>
+                    <a class="nav-link" href="punesimi.php">PUNESOHU</a>
                   </li>
                 </ul>
-                <a href="login.html"><button id="login-btn">Login</button></a>
+                <a href="login.php"><button id="login-btn">Login</button></a>
               </div>
             </div>
           </nav>
