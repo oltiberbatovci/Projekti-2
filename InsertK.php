@@ -20,12 +20,10 @@ if (isset($_POST['submitbtn'])) {
 
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="Insert.css"> 
-
     <head>
     </head>
     <body>
-        <h3 id="h3">Jeni duke shtuar nje Aplikim te Punes</h3>
+        <h3 id="h3">Shtoni nje aplikim te punes</h3>
         <form action="" method="post">  
             <p>Emri:</p>
             <input type="text" name="emri" ><br>
