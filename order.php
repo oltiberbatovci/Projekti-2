@@ -3,7 +3,7 @@ include_once 'Rezervimi.php';
 include_once 'RezervimiRepository.php';
 
 if (isset($_POST['submit'])) {
-    $emri = $_POST['name'];
+    $emri = $_POST['emri'];
     $email = $_POST['email'];
     $nrkontaktues = $_POST['Nrcontact'];
     $vendndodhja = $_POST['location'];
@@ -54,16 +54,16 @@ if (isset($_POST['submit'])) {
                     <a class="nav-link" href="index.php">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">ABOUT</a>
+                    <a class="nav-link" href="about.php">ABOUT</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="order.php">POROSIT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-link" href="contact.php">CONTACT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="punesimi.html">PUNESOHU</a>
+                    <a class="nav-link" href="punesimi.php">PUNESOHU</a>
                   </li>
                 </ul>
                 <a href="login.html"><button id="login-btn">Login</button></a>

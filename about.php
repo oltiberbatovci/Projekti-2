@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-logo" href="index.php">ThirreTaxin</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.php">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.php">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.php">POROSIT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="punesimi.php">PUNESOHU</a>
+              </li>
+            </ul>
+            <a href="login.php"><button id="login-btn">Login</button></a>
+          </div>
+        </div>
+      </nav>
+</section>
+
+
+<main>
+  <div class="heading">
+    <h1 style="padding-top: 20px;">ABOUT US</h1>
+    <p>
+      Kompania jonë ofron shërbim të ndryshëm me gjashtë operatorë të ndryshëm të gatshëm për të plotësuar nevojat e udhëtarëve në çdo kohë.
+    </p>
+  </div>
+  <div class="permbajtja">
+    <section class="about">
+      <div class="about-image">
+        <img src="images/background-photo-final.png">
+      </div>
+      <div class="about-content">
+        <h2 style="font-weight: 600;">Të gjitha në një vend</h2>
+        <p>
+          Kompania jonë ofron shërbim të ndryshëm me gjashtë operatorë të ndryshëm të gatshëm për të plotësuar nevojat e udhëtarëve në çdo kohë.
+          Në këtë flotë të shkëlqyer, përfshihen emrat e tillë si Taxi Tesla, Online Taxi, Blue Taxi, Golden Taxi, Pink Taxi dhe Urban Taxi. Përmes flotës së saj të shkëlqyer, kjo kompani siguron 
+          shërbim të besueshëm dhe të shpejtë në mënyrë që udhëtarët të mund të mbërrijnë në destinacionin e tyre me lehtësi dhe rehati.
+          Çdo operator është i përgatitur për të përballuar kërkesat e ndryshme të klientëve dhe për të siguruar një përvojë taksie të jashtëzakonshme për të gjithë udhëtarët e tyre.
+        </p>
+        <a href="order.php" class="butoni-about">Porosit Taxi</a>
+      </div>
+    </section>
+  </div>
+<div class="veturat">
+  <div class="card" style="width: 25rem;">
+    <img src="images/sedan.png" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">VETURA SEDAN</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 25rem;">
+    <img src="images/Suv.png" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">VETURA SUV</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 25rem;">
+    <img src="images/minivan.png" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">VETURA MINIVAN</p>
+    </div>
+  </div>
+        </div>
+
+
+        <h4 style="text-align: center; padding-top: 60px; font-weight: 600;">Feedback</h4>
+        <div class="reviews">
+        <div class="card" style="width: 18rem; margin: 30px;">
+          <img src="images/person1.png" class="card-img-top" style="height: 420px;">
+          <div class="card-body">
+            <p class="card-text">Jashtezakonisht i kenaqur me sherbimin.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin: 30px;">
+          <img src="images/person2.png" class="card-img-top" style="height: 420px;">
+          <div class="card-body">
+            <p class="card-text">Jashtezakonisht i kenaqur me sherbimin.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin: 30px;">
+          <img src="images/person3.png" class="card-img-top" style="height: 420px;">
+          <div class="card-body">
+            <p class="card-text">Jashtezakonisht i kenaqur me sherbimin.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin: 30px;">
+          <img src="images/person4.png" class="card-img-top" style="height: 420px;">
+          <div class="card-body">
+            <p class="card-text">Jashtezakonisht i kenaqur me sherbimin.</p>
+          </div>
+        </div>
+      </div>
+</main>
+
+<footer>
+  <div class="footermain">
+      <a class="footer-logo" href="index.php">ThirreTaxin</a>
+      <p class="p2-description" style="width: 40%; padding: 20px;">Zgjedhja juaj sapo eshte bere me e lehte. Me ne do te keni mundesine te kurseni kohen tuaj. Shpejte, sigurt dhe efikas. Te gjitha ne nje vend!
+      Platforma me e re ne treg e flotes se taksive me gjithsej 6 operatore nen sherbimin tuaj 24/7.</p>
+  
+
+  <div class="footer-center">
+      <h4>Links</h4>
+      <a href="https://www.facebook.com/">Facebook</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://www.google.com/">Google</a>
+  </div>
+
+  <div class="footer-right">
+      <h4>Contact</h4>
+          <p>044 123 123</p>
+          <p>045 345 678</p>
+          <p>0800 1111 55</p>
+  </div>
+  </div>
+  <p class="paragrafi-footer">
+      <small>All rights reserved &copy; Created By Olti</small>
+  </p>
+</footer>
+
+</body>
+</html>

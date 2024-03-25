@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 
     $AplikimetRepository = new aplikimetRepository();
     $AplikimetRepository->insertAplikimet($Aplikimetpunes);
-    header("location:aplikimi.php");
+    header("location:punesimi.php");
     }
 }
 ?>
